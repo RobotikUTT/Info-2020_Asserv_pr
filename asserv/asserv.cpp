@@ -1,3 +1,10 @@
+/**
+ * \file asserv.cpp
+ * \brief Holds the arduino setup and loop functions, which make the asserv run.
+ * \author Paul Constant <constantpaul@hotmail.fr>
+ * \date 2020/02/23
+**/
+
 #include <Arduino.h>
 
 #include "SimpleTimer.h"
@@ -29,6 +36,8 @@ void asservLoop() {
     collisions.update();
     goalList.processCurrentGoal();
 }
+
+// Arduino setup and loop functions
 
 void setup() {
     fillGoals();

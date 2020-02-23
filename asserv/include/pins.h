@@ -1,6 +1,6 @@
 /**
  * \file pins.h
- * \brief All pins used in @see asserv.ino.
+ * \brief All pins used in @see asserv.cpp.
  * \author Paul Constant <constantpaul@hotmail.fr>
  * \date 2020/02/23
 **/

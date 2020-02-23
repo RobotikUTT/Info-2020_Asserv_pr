@@ -1,6 +1,6 @@
 /**
  * \file parameters.h
- * \brief All params used for @see asserv.ino.
+ * \brief All params used for @see asserv.cpp.
  * \author Paul Constant <constantpaul@hotmail.fr>
  * \date 2020/02/23
 **/
