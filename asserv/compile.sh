@@ -32,10 +32,10 @@ function ask_user() {
 	if [ "$answer" = "uno" ] || [ "$answer" = "leonardo" ]; then
 		USER_TARGET="$answer"
 	elif [ "$answer" = "nano" ]; then
-        USER_TARGET="nano328"
-    elif [ "$answer" = "mega" ]; then
-        USER_TARGET="mega2560"
-    fi
+		USER_TARGET="nano328"
+	elif [ "$answer" = "mega" ]; then
+		USER_TARGET="mega2560"
+	fi
 
 	if [ "$USER_TARGET" = "" ]; then
 		printf "Incorrect parameters, please relaunch the script with correct parameters...\n"
