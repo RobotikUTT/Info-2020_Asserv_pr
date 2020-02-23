@@ -72,6 +72,8 @@ void sendPWM(PID pid, float error, int FORWARD_PIN, int BACKWARDS_PIN, int PWM_P
 void Control::resetPIDs() {
     linearPID.resetErrors();
     angularPID.resetErrors();
+    leftWheelPID.resetErrors();
+    rightWheelPID.resetErrors();
 }
 
 void Control::updateSpeeds(float distanceError, float thetaError, float maxLinearSpeed) {
