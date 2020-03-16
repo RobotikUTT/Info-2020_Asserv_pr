@@ -15,14 +15,16 @@
 
 class GoalList {
 public:
-    GoalList() { reset(); }
+    GoalList() { 
+        resetGoals(); 
+    }
     
     /**
      * \brief Processes the current goal. If it is reached, processes the next one.
     **/
     void processCurrentGoal();
     void addGoal(Goal goal);
-    void reset();
+    void resetGoals();
 
 private:
     Goal goals[MAX_SIMULTANEOUS_GOALS];

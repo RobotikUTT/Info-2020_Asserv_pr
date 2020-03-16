@@ -6,7 +6,7 @@ GoalList goalList;
 
 extern Control control;
 
-void GoalList::reset() {
+void GoalList::resetGoals() {
     currentGoalIndex = 0;
     lastGoalIndex = 0;
     goals[currentGoalIndex] = Goal();
