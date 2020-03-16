@@ -52,14 +52,14 @@ public:
      * \brief constructor of Goto order.
      * \param x x coordinate in mm
      * \param y y coordinate in mm
-     * \param speed speed at which we want to go in mm/s. Cannot exceed MAX_SPEED. 0 for default.
+     * \param maxSpeed max speed at which we want to go in mm/s. Cannot exceed MAX_SPEED. 0 for default.
     **/
-    Goto(float x, float y, float speed = 0) : Goal(), x(x), y(y), speed(speed) {}
+    Goto(float x, float y, float maxSpeed = 0) : Goal(), x(x), y(y), maxSpeed(maxSpeed) {}
 
     void process();
 
 private:
-    float x, y, speed; // mm, mm, mm/s
+    float x, y, maxSpeed; // mm, mm, mm/s
 };
 
 // add new goals here and override process()

@@ -33,5 +33,5 @@ void Goto::process() {
         distanceError = 0;
     } 
 
-    control.updateSpeeds(distanceError, thetaError, speed);
+    control.updateSpeeds(distanceError, thetaError, maxSpeed);
 }
